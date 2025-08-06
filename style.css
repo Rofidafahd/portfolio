@@ -83,17 +83,17 @@ nav ul li a:hover {
   padding: 0 20px;
 }
 
-.main h2 {
+.main h1 {
   font-size: 1.4em;
   font-weight: 500;
   margin-bottom: 5px;
 }
-.main h2{
+.main h1{
   font-size: 1.4em;
   font-weight: 500;
   margin-bottom: 5px;
  }
-.main h2::before{
+.main h1::before{
     content: "|";
     animation-name: typing;
     animation-duration: 3s;
