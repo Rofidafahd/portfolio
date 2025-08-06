@@ -96,7 +96,7 @@ nav ul li a:hover {
 .main h1::before{
     content: "|";
     animation-name: typing;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
  }
 @keyframes typing {
