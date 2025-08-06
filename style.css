@@ -100,40 +100,29 @@ nav ul li a:hover {
     animation-iteration-count: infinite;
  }
 @keyframes typing {
-    0%{
-        content: "He|";
-    }
-    10%{
-        content: "Hell|";
-    }
-    20%{
-        content: "Hello, |";
-    }
-    30%{
-        content: "Hello, I'm|";
-    }
-    40%{
-        content: "Hello, I'm Rofi|";
-    }
-    50%{
-        content: "Hello, I'm Rofida|";
-    }
-    60%{
-        content: "Hello, I'm Rofida Fah|";
-    }
-    70%{
-        content: "Hello, I'm Rofida Fahd H|";
-    }
-    80%{
-        content: "Hello, I'm Rofida Fahd Ham|";
-    }
-    90%{
-        content: "Hello, I'm Rofida Fahd Hamod|";
-    }
-    100%{
-        content: "Hello, I'm Rofida Fahd Hamoda |";
-    }
- }
+    0% { content: "He|"; }
+    5% { content: "Hell|"; }
+    10% { content: "Hel|"; }
+    15% { content: "Hello|"; }
+    20% { content: "Hello, |"; }
+    25% { content: "Hello, I'|"; }
+    30% { content: "Hello, I'm "; }
+    35% { content: "Hello, I'm R"; }
+    40% { content: "Hello, I'm Rof"; }
+    45% { content: "Hello, I'm Rofid|"; }
+    50% { content: "Hello, I'm Rofida |"; }
+    55% { content: "Hello, I'm Rofida F|"; }
+    60% { content: "Hello, I'm Rofida Fa|"; }
+    65% { content: "Hello, I'm Rofida Fah|"; }
+    70% { content: "Hello, I'm Rofida Fahd|"; }
+    75% { content: "Hello, I'm Rofida Fahd H|"; }
+    80% { content: "Hello, I'm Rofida Fahd Ha|"; }
+    85% { content: "Hello, I'm Rofida Fahd Ham|"; }
+    90% { content: "Hello, I'm Rofida Fahd Hamo|"; }
+    95% { content: "Hello, I'm Rofida Fahd Hamod|"; }
+    100% { content: "Hello, I'm Rofida Fahd Hamoda|"; }
+}
+
 .main h3 {
   font-size: 2.5em;
   font-weight: 700;
