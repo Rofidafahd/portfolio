@@ -12,12 +12,14 @@
   list-style: none;
   text-decoration: none;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 body {
   color: white;
   max-width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -67,7 +69,7 @@ nav ul li a:hover {
 /* home */
 .home {
   width: 100%;
-  min-height: 100vh;
+  height: 80svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,6 +82,7 @@ nav ul li a:hover {
 }
 
 .main {
+  margin-top: 5%;
   max-width: 700px;
   padding: 0 20px;
 }
@@ -162,6 +165,7 @@ nav ul li a:hover {
 
 .social-icons a:hover {
   color: var(--accent);
+  transform: translateY(-3px);
 }
 
 /* about */
@@ -169,6 +173,35 @@ nav ul li a:hover {
   background-image: linear-gradient(to bottom right, #0a201f, #1c3c39, #263d3b, #000000);
   padding: 80px 20px;
   text-align: center;
+  display: flex;
+}
+
+.AboutCir {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: circle 3s infinite ease-in-out;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
 }
 
 .about .container {
@@ -399,10 +432,13 @@ nav ul li a:hover {
 /* footer */
 footer {
   background-color: black;
+  color: var(--accent);
   padding: 20px 10px;
   text-align: center;
   font-size: 1em;
+  font-weight: bold;
 }
+
 @media (max-width: 992px) {
   header {
     padding: 10px 60px;
@@ -441,6 +477,10 @@ footer {
   .contact form,
   .contact p {
     padding: 0 10px;
+  }
+  
+    .about{
+    flex-direction: column;
   }
 }
 
@@ -483,5 +523,9 @@ footer {
 
   .project-card img {
     height: 150px;
+  }
+
+  .about{
+    flex-direction: column;
   }
 }
