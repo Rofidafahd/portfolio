@@ -443,6 +443,9 @@ footer {
   header {
     padding: 10px 60px;
   }
+  .about{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -479,7 +482,7 @@ footer {
     padding: 0 10px;
   }
   
-    .about{
+  .about{
     flex-direction: column;
   }
 }
